@@ -1,0 +1,10 @@
+{
+  "id": "obsidian-navigation-preview",
+  "name": "Obsidian Navigation Preview",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "VSCode-style preview tabs: single-click to preview, double-click to pin.",
+  "author": "vctrtvfrrr",
+  "authorUrl": "https://victorotavio.com.br",
+  "isDesktopOnly": false
+}

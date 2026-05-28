@@ -1,0 +1,18 @@
+/*
+ * Preview tab: italic + muted colour (exactly like VSCode's preview tab)
+ * Pinned tab: default Obsidian style (no override needed)
+ */
+
+/* Tab title text — italic and muted when the tab is a preview */
+.workspace-tab-header[data-vsc-preview] .workspace-tab-header-inner-title {
+  font-style: italic;
+  color: var(--text-muted) !important;
+}
+
+/*
+ * Prevent macOS from treating the tab header area as the window titlebar
+ * drag region, which would cause a double-click to zoom the window.
+ */
+.workspace-tab-header {
+  -webkit-app-region: no-drag !important;
+}

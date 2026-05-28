@@ -1,0 +1,25 @@
+{
+  "name": "@vctrtvfrrr/obsidian-navigation-preview",
+  "version": "1.0.0",
+  "description": "VSCode-style preview tabs: single-click to preview, double-click to pin.",
+  "license": "MIT",
+  "main": "main.js",
+  "files": [
+    "manifest.json",
+    "main.js",
+    "styles.css"
+  ],
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "node esbuild.config.mjs production",
+    "typecheck": "tsc --noEmit",
+    "version": "jq --arg v \"$npm_new_version\" '.version = $v' manifest.json > manifest.tmp.json && mv manifest.tmp.json manifest.json && git add manifest.json"
+  },
+  "devDependencies": {
+    "@types/node": "^25",
+    "builtin-modules": "^3.3.0",
+    "esbuild": "^0.28.0",
+    "obsidian": "latest",
+    "typescript": "^6"
+  }
+}
